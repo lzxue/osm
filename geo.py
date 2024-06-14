@@ -44,7 +44,8 @@ def get_aoi(
                 "select only one!"
             )
         try:
-            lat, lon = geocode(address)
+            point,formatted_address = amap_geocode(address)
+            lon,lat = point
         except ValueError as e:
             raise GeoCodingError(f"Could not geocode address '{address}'") from e
     else:
@@ -153,5 +154,5 @@ def renderChoroplethMap(geoData,line_color,background_color) :
           }
       ],
   }
-    l7(options=options, style={"height": 800,"background":background_color}, key="streamlit-l7")
+    l7(options=options, style={"height": 600,"background":background_color}, key="streamlit-l7")
    
