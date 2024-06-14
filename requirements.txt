@@ -1,3 +1,5 @@
 altair
 pandas
 streamlit
+osmnx
+streamlit_l7
