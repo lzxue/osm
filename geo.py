@@ -153,5 +153,5 @@ def renderChoroplethMap(geoData,line_color,background_color) :
           }
       ],
   }
-    l7(options=options, style={"height": 400,"background":background_color}, key="streamlit-l7")
+    l7(options=options, style={"height": 800,"background":background_color}, key="streamlit-l7")
    

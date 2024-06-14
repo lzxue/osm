@@ -14,8 +14,8 @@ col1, col2, col3 = st.columns(3)
 background_color = col1.color_picker("选择背景颜色", "#fff")
 line_color = col1.color_picker("选择路网颜色", "#000")
 
-radius = col2.slider("选择一个值", min_value=500, max_value=10000, value=1000, step=100)
-address=col3.text_input("请输入地址", "Hangzhou, China")
+radius = col2.slider("选择一个值:米", min_value=500, max_value=10000, value=5000, step=100)
+address=col3.text_input("请输入地址", "北京")
 
 addressGeo= get_aoi(address=address,radius=radius)
 
